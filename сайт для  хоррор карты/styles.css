@@ -1,0 +1,308 @@
+body {
+    background-image: url('horror2.png');
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #333; /* add a background color to the header */
+    padding: 10px; /* add some padding to the header */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+nav li {
+    margin-right: 20px; /* add some space between the links */
+}
+
+nav a {
+    color: #857f7f;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+}
+
+section {
+    background-color: rgba(73, 72, 72, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #686363;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.image-container::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #474545;
+    color: #8b8787;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #292828;
+}
+
+form button:active {
+    background-color: #141414;
+}
+
+.comments {
+    padding: 20px;
+    background-color: rgba(49, 47, 47, 0.8);
+    border-radius: 10px;
+    text-align: left;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.comments p {
+    margin-bottom: 10px;
+}
+
+/* Анимированные эффекты */
+.animated {
+    animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Звуковые эффекты */
+audio {
+    display: none;
+}
+
+.play-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #474545;
+    color: #8b8787;
+    cursor: pointer;
+    margin-top: 10px; /* добавить отступ сверху */
+}
+
+.play-button:hover {
+    background-color: #292828;
+}
+
+.play-button:active {
+    background-color: #141414;
+}
+
+/* Дополнительные стили */
+body {
+    background-attachment: fixed;
+}
+
+section {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gallery img {
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+/* Дополнительные стили */
+body {
+    background-attachment: fixed;
+    -webkit-transition: background-position 5s ease;
+    -moz-transition: background-position 5s ease;
+    -o-transition: background-position 5s ease;
+    transition: background-position 5s ease;
+}
+
+section {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 70%;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+  
+form textarea {
+    width: 75%; /* увеличили на 50px */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #686363;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+form button {
+    width: 30%;
+}
+
+.comments {
+    padding: 20px;
+    background-color: rgba(49, 47, 47, 0.8);
+    border-radius: 10px;
+    text-align: left;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.comments p {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
+
+body {
+    background-color: black;
+    color: rgb(134, 22, 22);
+  }
+
+.big-text {
+    font-size: 32px;
+    font-weight: bold;
+}
